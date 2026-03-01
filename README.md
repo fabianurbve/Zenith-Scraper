@@ -1,4 +1,4 @@
-Universal Web Scraper Framework | Python & Selenium
+Zenith Scraper v1.0 | Python & Selenium
 High-Performance Data Extraction Engine for Professional Business Intelligence.
 ===================================================================================
 This isn't just a script; it's a modular, scalable, and production-ready framework. Built with an engineering mindset, this system is designed to handle thousands of records, bypass common bot-detection, and deliver clean, actionable data in professional Excel formats.
