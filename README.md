@@ -10,7 +10,7 @@ Why does this project stand out in the freelance market?
 
 - Stealth & Stability: Implements advanced "Anti-Detection" techniques, including digital fingerprint masking and professional User-Agent rotation.
 
-- Distribution Ready: Features a specialized BASE_DIR logic that allows the code to run perfectly as a standalone Binary (.exe). Your clients don't need Python; they just need your tool.
+- Distribution Ready: Features a specialized BASE_DIR logic that allows the code to run perfectly as a standalone Binary (.exe).
 
 - Smart Data Cleaning: Automatic duplicate removal and timestamped reporting to ensure the data is "Business-Ready" the moment it's generated.
 
@@ -27,6 +27,7 @@ Why does this project stand out in the freelance market?
 - Data Handling: Pandas & Pathlib for modern file management.
 
 🧠 Engineering Philosophy: Built for Scale
+
 Unlike basic scripts found in tutorials, this framework was developed following Solid Principles and Industrial Standards:
 
 - Fault Tolerance: The scraper implements atomic try-except blocks and explicit waits (WebDriverWait) to ensure that a single slow-loading element doesn't break the entire 1,000-record batch.
@@ -36,6 +37,7 @@ Unlike basic scripts found in tutorials, this framework was developed following 
 - Future-Proof Logic: By decoupling the browser configuration from the scraping logic, this tool can be adapted to new websites or different browsers (like Firefox or Edge) with minimal code changes.
 
 📈 Demo Performance
+
 Currently configured to target a high-volume bookstore environment:
 
 - Navigates through complex paginations.
@@ -45,9 +47,11 @@ Currently configured to target a high-volume bookstore environment:
 - Delivers a professional .xlsx file with a unique timestamp for perfect record tracking.
 
 🏗️ Project Structure & Modules
+
 The framework is organized into specialized modules to ensure high maintainability and scalability, following the Single Responsibility Principle (SRP):
 
 browser_config.py
+
 This module acts as a Browser Factory. It handles the initialization of the Selenium WebDriver with advanced stealth configurations:
 
 - Stealth Tactics: Disables automation flags and masks the navigator.webdriver fingerprint to avoid detection.
@@ -57,6 +61,7 @@ This module acts as a Browser Factory. It handles the initialization of the Sele
 - Auto-Update: Utilizes WebDriverManager to ensure the driver version always matches the installed browser.
 
 scraper_core.py
+
 The "brain" of the operation. It contains the WebScraper class, which encapsulates all interaction logic:
 
 - Atomic Interactions: Manages logins, page scrolling, and data extraction using robust XPath selectors.
@@ -66,6 +71,7 @@ The "brain" of the operation. It contains the WebScraper class, which encapsulat
 - Smart Navigation: Handles dynamic pagination through a recursive or loop-based clicking system with explicit waits.
 
 data_export.py
+
 The persistence layer. This module transforms raw scraped data into professional-grade business assets:
 
 - Binary Compatibility: Built-in logic to detect if the script is running as a standard .py file or a compiled .exe, ensuring file paths never break.
@@ -75,6 +81,7 @@ The persistence layer. This module transforms raw scraped data into professional
 - Timed Reporting: Generates unique filenames with timestamps (YYYYMMDD_HHMM) to prevent data overwriting.
 
 main.py
+
 The entry point of the application. It orchestrates the flow by connecting the browser factory, the scraper core, and the data exporter in a clean, high-level execution block.
 
 Developed by Fabian
