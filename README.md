@@ -84,5 +84,11 @@ main.py
 
 The entry point of the application. It orchestrates the flow by connecting the browser factory, the scraper core, and the data exporter in a clean, high-level execution block.
 
+📦 Build Instructions
+
+To generate the standalone executable with the official branding and icon, use the following command:
+
+pyinstaller.exe --onefile --icon=icon.ico --name="Zenith Scraper" main.py
+
 Developed by Fabian
 March, 2026
